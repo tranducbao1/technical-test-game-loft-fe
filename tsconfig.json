@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "typeRoots": ["./node_modules/@types/"],
+    "strictNullChecks": false,
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["src/modules/shared/components"],
+      "@components/*": ["src/modules/shared/components/*"],
+      "@layout": ["src/layout"],
+      "@layout/*": ["src/layout/*"],
+      "@config": ["src/config"],
+      "@config/*": ["src/config/*"],
+      "@assets": ["src/assets"],
+      "@assets/*": ["src/assets/*"]
+    }
+  },
+  "include": ["src", "src/**/*", "eslint.config.mjs", "vite.config.ts"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

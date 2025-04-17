@@ -1,0 +1,38 @@
+{
+  "files.exclude": {
+    "node_modules/": true,
+    "bin": true,
+    "dist": true,
+    "public": true,
+    ".build": true,
+    ".husky": true,
+    ".dev": true,
+    ".pnpmrc": true,
+    ".secrets.baseline": true,
+    ".prettierrc.cjs": true,
+    "commitlint.config.cjs": true,
+    "vite.config.d.ts": true,
+    "workbox-config.cjs": true,
+    "eslint.config.mjs": true
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
