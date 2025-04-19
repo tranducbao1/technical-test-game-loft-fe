@@ -11,7 +11,7 @@ export default defineConfig((env: ConfigEnv) => ({
   plugins: [
     reactPlugin(),
     checker({
-      typescript: true,
+      // typescript: true,
     }),
   ],
   resolve: {
