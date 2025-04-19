@@ -1,4 +1,4 @@
-import reactPlugin from '@vitejs/plugin-react';
+import reactPlugin from '@vitejs/plugin-react-swc';
 import { resolve } from 'path';
 import { ConfigEnv, defineConfig, loadEnv } from 'vite';
 import checker from 'vite-plugin-checker';
