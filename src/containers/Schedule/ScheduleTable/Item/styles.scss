@@ -1,0 +1,14 @@
+.schedule-select-seat {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 0;
+  color: #495057;
+  &.form-select:disabled {
+    background-color: #ffffff;
+    font-weight: 600;
+  }
+  &.invisible-select {
+    visibility: hidden;
+  }
+}

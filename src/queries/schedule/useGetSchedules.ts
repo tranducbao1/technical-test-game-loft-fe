@@ -18,7 +18,7 @@ export function useGetSchedules(
     error,
     isError,
     isFetching,
-    refetch: onGetUsersList,
+    refetch: onGetSchedules,
   } = useQuery({
     queryKey: [API_QUERIES.SCHEDULE_LIST, params],
     queryFn: async (query) => {
@@ -33,20 +33,20 @@ export function useGetSchedules(
 
   const queryClient = useQueryClient();
 
-  const handleInvalidateGetUsersList = () =>
+  const handleInvalidateGetSchedules = () =>
     queryClient.invalidateQueries({
       queryKey: [API_QUERIES.SCHEDULE_LIST, params],
     });
-  const { data: users = [], meta: { count: rowCount = 0 } = {} } = data || {};
+  const { data: schedules = [], meta: { count: rowCount = 0 } = {} } = data || {};
 
   return {
     rowCount,
-    users,
+    schedules,
     error,
     isError,
     isFetching,
     setParams,
-    onGetUsersList,
-    handleInvalidateGetUsersList,
+    onGetSchedules,
+    handleInvalidateGetSchedules,
   };
 }

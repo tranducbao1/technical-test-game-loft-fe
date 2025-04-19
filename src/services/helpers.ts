@@ -5,3 +5,5 @@ export interface ApiResponseType<T> {
   meta?: any;
   error?: any;
 }
+
+export type Callback = (..._args: any[]) => void;

@@ -1,4 +1,4 @@
-# DOE ADC React App
+# Schedule React App
 
 ## Prerequisites
 
